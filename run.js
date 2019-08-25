@@ -78,7 +78,7 @@ module.exports = (async () => {
   }
 
   const todaysDate = date.format('D-M-YYYY');
-  const currentTime = !argv.u ? date.format('-H:m:s') : '';
+  const currentTime = !argv.u ? date.format('-H:mm:ss') : '';
 
   const backupName = `server-backup-${todaysDate}${currentTime}.tgz`;
 
